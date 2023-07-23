@@ -35,28 +35,7 @@ Modules:
   + ….ProductApi
 ```
 ### Diagram
-```plantuml
-@startuml
-title SpringModulithPocApplication
-
-top to bottom direction
-
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
-
-Container_Boundary("SpringModulithPocApplication.SpringModulithPocApplication_boundary", "SpringModulithPocApplication", $tags="") {
-  Component(SpringModulithPocApplication.SpringModulithPocApplication.Product, "Product", "Module", "", $tags="")
-  Component(SpringModulithPocApplication.SpringModulithPocApplication.Notification, "Notification", "Module", "", $tags="")
-  Component(SpringModulithPocApplication.SpringModulithPocApplication.Api, "Api", "Module", "", $tags="")
-}
-
-Rel_D(SpringModulithPocApplication.SpringModulithPocApplication.Api, SpringModulithPocApplication.SpringModulithPocApplication.Notification, "depends on", $tags="")
-Rel_D(SpringModulithPocApplication.SpringModulithPocApplication.Api, SpringModulithPocApplication.SpringModulithPocApplication.Product, "uses", $tags="")
-
-SHOW_LEGEND(true)
-@enduml
-```
+![diagram](components-SpringModulithPocApplication.png)
 
 ## Reference documentation
 * https://www.baeldung.com/spring-modulith
