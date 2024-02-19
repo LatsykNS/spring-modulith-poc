@@ -18,7 +18,10 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.modulith:spring-modulith-starter-core'
+    implementation('org.springframework.boot:spring-boot-starter-actuator')
+    implementation 'org.springframework.modulith:spring-modulith-moments'
     implementation 'org.springframework.boot:spring-boot-starter-logging'
+    runtimeOnly 'org.springframework.modulith:spring-modulith-actuator'
     implementation 'org.springframework:spring-tx'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -27,7 +30,7 @@ dependencies {
 
 dependencyManagement {
     imports {
-        mavenBom 'org.springframework.modulith:spring-modulith-bom:1.0.0-M1'
+        mavenBom 'org.springframework.modulith:spring-modulith-bom:1.0.5'
     }
 }
 
