@@ -39,4 +39,5 @@ Modules:
 
 ## Reference documentation
 * https://www.baeldung.com/spring-modulith
-* https://docs.spring.io/spring-modulith/docs/1.0.0-SNAPSHOT/reference/html/#preface
+* https://docs.spring.io/spring-modulith/docs
+* https://github.com/spring-projects/spring-modulith
