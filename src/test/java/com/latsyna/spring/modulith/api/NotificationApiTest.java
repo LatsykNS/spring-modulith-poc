@@ -33,8 +33,6 @@ class NotificationApiTest {
 
     @Test
     void sendNotificationToCustomer(final PublishedEvents publishedEvents) {
-        for (var i = 0; i < 8; i++) {
-            timeMachine.shiftBy(Duration.ofDays(i));
-        }
+        timeMachine.shiftBy(Duration.ofDays(7));
     }
 }
